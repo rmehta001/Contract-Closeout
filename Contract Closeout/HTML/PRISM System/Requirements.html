@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script src="https://kit.fontawesome.com/feffb1c48c.js" crossorigin="anonymous"></script>
+  <style>
+
+    .btn {
+  width: 180px;
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.separator {
+      content: '';
+      display: inline-block;
+      background: #888;
+      margin: 0px 4px;
+      height: 18px;
+      width: 1px;
+      vertical-align: top;
+    }
+
+    .footerMain {
+        width: 100%;
+        clear: both;
+        padding: 5px 0px;
+        display: flex;
+    }
+    
+    
+    #first, #second, #third {
+        float: left;
+        margin: 0px;
+        width: 33%;
+    }
+    </style>
+</head>
+<body>
+​<div style="border: 3px solid #02669f;">
+<div style="background-color:lightsteelblue;">
+     PRISM&trade;
+     
+     <a href="loginPrism.html"  style="float: right;justify-content: right;">Sign Out</a>
+     <a href="welcome_Page.html"  style="float: right;justify-content: right;">Home &nbsp;</a>
+     <a href=""  style="float: right;justify-content: right;">Help &nbsp;</a>
+     
+</div>
+<div style="background-color:#02669f;">
+&nbsp BPA Call:<span id="result-contractNo5"></span> (0001/In Progress)
+<script>
+document.getElementById("result-contractNo5").innerHTML=localStorage.getItem("contractKey");
+
+
+</script> 
+<div style="float: right;">
+ 
+  <a href="">
+    <img src="nav_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+      <img src="details_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+        <img src="messages_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+          <img src="access_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+    <img src="history_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+      <img src="postaward_button.png" width="48px" height="48px"  alt="nav">
+    </a>
+ </div>
+ </div>           
+ <br><br><br>
+
+ <div style="float:right;">
+ <div style="border:1px solid black;border-radius:20px;">
+ <form style="padding: 8px;" action="">
+
+  <label>
+    <img src="printer.png" width="30px" height="30px">
+  </label>
+  <select id="selectBox" name="" onchange="javascript:location.href = this.value;">
+        <option value="" selected>Other Actions</option>
+        <option value="changeBuyers.html">Change Buyer</option>
+      </select>
+ 
+</form>
+
+</div>
+
+
+</div>
+<div style=" height:20px; background-color: grey;margin-top: 30px;"></div>
+<div style="display: flex;">
+<div>
+&nbsp;Summary
+<br>
+<img src="summary.png">
+</div>
+<div>
+  <button type="menu" style="transform:rotate(90deg);">Summary</button>
+  <!-- <button type="menu" style="transform:rotate(90deg);">e-Folder</button> -->
+  </div>
+
+
+<div>
+
+   
+<h3> General Information </h3>
+      </br>
+      <p> Please enter the Purpose of this document and, if needed, a more detailed description. This information does not print to the form but is helpful to the people working on the document and makes the award easier to find later using search criteria.</p></br></br>
+
+        Purpose: </br>
+        <input type="text" style="height:40px; width:800px;"/>
+
+    </br>
+<em>Number of characters left: (Count)</em>
+    <p>Description of Requirements 6M</p>
+    <input type="text" style="height:40px; width:800px;" /> </br>
+    <em>Number of Character's Left: (Count)</em> </br>
+    <p>Potential Amount:&nbsp;&nbsp;<input type="text"/></p> 
+
+    <p><form>Inherently Governmental Functions:<select name="PlaceHolder">
+        <option value="Associated">Associated</option>
+        <option value="Not Associated">Not Associated</option>
+        <option value="Closely Associated">Closely Associated</option>
+    </select>
+    </form></p>
+        <p><b>Project Information</b></p>
+
+        If this request is associated with a specific project then enter the Project ID and Project Title in this section. A selection list for the Project ID is provided for convenience but the Project Title
+        not appearing on the selection list may able to be entered
+        </br>
+
+       <p>Project ID:&nbsp;&nbsp;<input type="text"/><input type="Submit"/></p>
+       <p>Project Title:&nbsp;&nbsp;<input type="text"style="height:20px; width:750px;"/></p>
+
+        <!--Here applying CSS you can modify height and width of input box-->
+
+        <p>Service and Commodity Classification</p></br>
+
+        <em>Please enter the predominant classification information for this request. This information is used to determine the workflow for this award.</em>
+    </br>
+    <p><form>Contingency, Humanitarian, or Peace-Keeping <select name="PlaceHolder">
+        <option value="Contingency">Contingency</option>
+        <option value="Humanitarian">Humanitarian</option>
+        <option value="Peace-Keeping">Peace-Keeping</option>
+    </select>
+    </form></p>
+
+    <p><form>Criticality Designator <select name="PlaceHolder">
+        <option value="Contingency">Contingency</option>
+        <option value="Humanitarian">Humanitarian</option>
+        <option value="Peace-Keeping">Peace-Keeping</option>
+    </select>
+    </form></p>
+
+    <p>Inventory Org:&nbsp;&nbsp;<input type="text"/><input type="Submit"/></p>
+
+    <p>ABD Document #:&nbsp;&nbsp;<input type="text"style=/></br>
+        ABD Source #:&nbsp;&nbsp;<input type="text"style=/></br>
+        Aquisition Procedure:&nbsp;&nbsp;<input type="text"style=/></p>
+    </br>
+</br>
+</br>
+
+<a href="Dates.html"><button class="btn"> Next <span class="separator"></span> <i class="fas fa-arrow-right"></i></button></a>
+<a href="Requirements.html" ><button class="btn"><i class="fas fa-home"></i> Return to Home</button></a>
+</div>
+
+</div>
+
+<footer style="background-color:lavender;font-size: 10px;">
+  <div class="footerMain">
+   <div style="text-align:left" id="first">&copy;2018 Compusearch Software Systems, Inc. All rights reserved prod1.</div>
+   <div style="text-align:center" id="second">Accessibility and Helpful Tools</div>
+   <div style="text-align:right" id="third">PRISM v. 72.60.07.09.COTS</div>
+  </div>
+  </footer>
+</div>
+  </body>
+  </html>
+  

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+    .footerMain {
+        width: 100%;
+        clear: both;
+        padding: 5px 0px;
+        display: flex;
+    }
+    
+    
+    #first, #second, #third {
+        float: left;
+        margin: 0px;
+        width: 33%;
+    }
+    
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+    </style>
+  <script>
+
+function changeAction(val){
+    document.getElementById('storeID').setAttribute('action', val);
+}
+  </script>
+</head>
+<body>
+​
+<div style="background-color:lightsteelblue;">
+     PRISM&trade;
+     
+     <a href="loginPrism.html"  style="float: right;justify-content: right;">Sign Out</a>
+     <a href="welcome_Page.html"  style="float: right;justify-content: right;">Home &nbsp;</a>
+     <a href=""  style="float: right;justify-content: right;">Help &nbsp;</a>
+     
+</div>
+<div style="background-color:#02669f;">
+&nbsp BPA Call: <span id="result-contractNo"></span> (BASE/Released)
+<script>
+document.getElementById("result-contractNo").innerHTML=localStorage.getItem("contractKey");
+
+
+</script>
+<div style="float: right;">
+ 
+  <a href="">
+    <img src="nav_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+      <img src="details_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+        <img src="messages_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+          <img src="access_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+    <img src="history_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+      <img src="postaward_button.png" width="48px" height="48px"  alt="nav">
+    </a>
+ </div>
+ </div>           
+ <br><br><br>
+ 
+ <div style="float:right;">
+ <div style="border:1px solid black;border-radius:20px;">
+ <form style="padding: 8px;" action="">
+
+  <label id="moreImages">
+    <img src="route_button.png" width="30px" height="30px">
+    <img src="printer.png" width="30px" height="30px">
+    <img id="modify" src="modify_button.png" width="30px" height="30px">
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div style="background-color:#02669f;color: #fefefe;">Modification Number</div>
+        <div style="float: inline-end;">
+        <img src="ABC_spelling_button.png">
+        </div>
+        <br><br><br>
+        <div>
+          <img src="Automatic_numbering_description_text.png">
+        </div>
+        <form>
+          <label for="ModificationMask">Modification AutoNumber Mask: &#10033;</label> 
+          <select name="ModificationMask" id="ModificationMask" required>
+             <option value="" selected>Modification Mask (#)</option>
+          </select><br><br>
+          <label>Reason For Modification:</label> 
+          <select>
+             <option value="" >Modify</option>
+             <option value="" >Close Out</option>
+             <option value="" >Release Contract</option>
+          </select><br><br>
+          <a style="text-decoration: none;
+          background-color: lightsteelblue;
+          color:black;
+          display: inline-block;
+          padding: 8px 16px;" href="modification_InProgress.html">Continue &raquo;</a>
+          <br><br>
+          <a style="text-decoration: none;
+          background-color: lightsteelblue;
+          color: black;
+          display: inline-block;
+          padding: 8px 16px;" href="#">Cancel</a><br><br>
+        </form>
+      </div>
+      </div>  
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("modify");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    <img src="validate_button.png" width="30px" height="30px">
+  </label>
+  <select id="selectBox" name="" onchange="javascript:location.href = this.value;">
+        <option value="" selected>Other Actions</option>
+        <option value="changeBuyers.html">Change Buyer</option>
+        <img src="printer.png" width="30px" height="30px">
+}
+      </select>
+ 
+</form>
+
+</div>
+
+
+</div>
+<div style=" height:20px; background-color: grey;margin-top: 30px;"></div>
+<div style="display: flex;">
+<div>
+&nbsp;Summary
+
+<button type="menu" style="transform:rotate(90deg);">Summary</button>
+<button type="menu" style="transform:rotate(90deg);">e-Folder</button>
+</div>
+<div>
+
+    BPA Call: <span id="result-contractNo1"></span>
+      <script>
+      document.getElementById("result-contractNo1").innerHTML=localStorage.getItem("contractKey");
+      
+      
+      </script>
+    <h5 style="font-family: cursive;">What would you like to do?</h5>
+    <ul>
+    
+    <li style="list-style-image: url(begin_bpa.png);"><a href="">Begin BPA call closeout process</a></li>
+    <li style="list-style-image: url(view_snapshot.png);"><a href="">View Snapshot</a></li>
+    <li style="list-style-image: url(view_details.png);"><a href="">View BPA call details</a></li>
+    <li style="list-style-image: url(view_sections.png);"><a href="">View BPA call sections</a></li>
+    <li style="list-style-image: url(view_distribution.png);"><a href="">view release distribution</a></li>
+    <li style="list-style-image: url(view_announcements.png);"><a href="">View Announcements</a></li>
+    <li style="list-style-image: url(view_supporting.png);"><a href="">View Supporting docs</a></li>
+</ul>
+<button type="button">Return to Home</button>    
+</div>
+
+</div>
+
+<footer style="background-color:lavender;font-size: 10px;">
+  <div class="footerMain">
+   <div style="text-align:left" id="first">&copy;2018 Compusearch Software Systems, Inc. All rights reserved prod1.</div>
+   <div style="text-align:center" id="second">Accessibility and Helpful Tools</div>
+   <div style="text-align:right" id="third">PRISM v. 72.60.07.09.COTS</div>
+  </div>
+  </footer>
+</body>
+</html>
+  

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="login2.css" media="screen"/>
+</head>
+<Body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+      <p>PRISM&trade; Sign In</p>
+    </div>
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="password" id="password" class="fadeIn third" name="login" placeholder="password"><br>
+      <input type="button" class="fadeIn fourth" onclick="javascript:validate()" value="Login">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("login").value == "admin"
+       && document.getElementById("password").value == "UiPath@123" )
+    {
+  //alert( "Login Successful" );
+	location.replace("welcome_Page.html");
+    }
+    else
+    {
+        alert( "Login failed! Invalid Credentials" );
+        //location.href="";
+    }
+}
+</script>
+</Body>
+</html>

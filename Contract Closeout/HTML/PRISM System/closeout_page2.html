@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+    .footerMain {
+        width: 100%;
+        clear: both;
+        padding: 5px 0px;
+        display: flex;
+    }
+    
+    
+    #first, #second, #third {
+        float: left;
+        margin: 0px;
+        width: 33%;
+    }
+    </style>
+  <!-- <script>
+
+function changeAction(val){
+    document.getElementById('storeID').setAttribute('action', val);
+}
+  </script> -->
+</head>
+<body style="border: 3px solid #02669f ;">
+​
+<div style="background-color:lightsteelblue;">
+     PRISM&trade;
+     
+     <a href="loginPrism.html"  style="float: right;justify-content: right;">Sign Out</a>
+     <a href="welcome_Page.html"  style="float: right;justify-content: right;">Home &nbsp;</a>
+     <a href=""  style="float: right;justify-content: right;">Help &nbsp;</a>
+     
+</div>
+<div style="background-color:#02669f;">
+&nbsp; BPA Call: <span id="result-contractNo"></span>
+<script>
+document.getElementById("result-contractNo").innerHTML=localStorage.getItem("contractKey");
+
+
+</script>
+<div style="float: right;">
+ 
+  <a href="">
+    <img src="nav_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+      <img src="details_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+        <img src="messages_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+          <img src="access_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+    <img src="history_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+      <img src="postaward_button.png" width="48px" height="48px"  alt="nav">
+    </a>
+ </div>
+ </div>           
+ <br><br><br>
+
+ <div style="float:right;">
+ <div style="border:1px solid black;border-radius:20px;">
+ <form style="padding: 8px;" action="">
+
+  <label>
+    <img src="printer.png" width="30px" height="30px">
+  </label>
+  <select id="selectBox" name="" onchange="javascript:location.href = this.value;">
+        <option value="" selected>Other Actions</option>
+        <option value="changeBuyers.html">Change Buyer</option>
+      </select>
+ 
+</form>
+
+</div>
+
+
+</div>
+<div style=" height:20px; background-color: grey;margin-top: 30px;"></div>
+<div style="display: flex;">
+<div>
+&nbsp;Summary<br>
+<img src="summary.png"><br>
+</div>
+<div>
+  <button type="menu" style="transform:rotate(90deg);">Summary</button>
+  <!-- <button type="menu" style="transform:rotate(90deg);">e-Folder</button> -->
+  </div>
+  
+<div>
+
+    BPA Call: <span id="result-contractNo4"></span>
+      <script>
+      document.getElementById("result-contractNo4").innerHTML=localStorage.getItem("contractKey");
+      
+      
+      </script>
+    <h5 style="font-family: cursive;">What would you like to do?</h5>
+    <ul>
+    
+    <li style="list-style-image: url(begin_bpa.png);"><a href="">Begin BPA call closeout process</a></li>
+    <li style="list-style-image: url(view_snapshot.png);"><a href="">View Snapshot</a></li>
+    <li style="list-style-image: url(view_details.png);"><a href="">View BPA call details</a></li>
+    <li style="list-style-image: url(view_sections.png);"><a href="">View BPA call sections</a></li>
+    <li style="list-style-image: url(view_distribution.png);"><a href="">view release distribution</a></li>
+    <li style="list-style-image: url(view_announcements.png);"><a href="">View Announcements</a></li>
+    <li style="list-style-image: url(view_supporting.png);"><a href="">View Supporting docs</a></li>
+</ul>
+<button type="button">Return to Home</button><br><br>
+</div>
+
+</div>
+
+<footer style="background-color:lavender;font-size: 10px;">
+  <div class="footerMain">
+   <div style="text-align:left" id="first">&copy;2018 Compusearch Software Systems, Inc. All rights reserved prod1.</div>
+   <div style="text-align:center" id="second">Accessibility and Helpful Tools</div>
+   <div style="text-align:right" id="third">PRISM v. 72.60.07.09.COTS</div>
+  </div>
+  </footer>
+  </body>
+  </html>
+  

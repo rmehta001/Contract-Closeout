@@ -1,0 +1,75 @@
+<html>
+    <head>
+
+<style>
+    .footerMain {
+        width: 100%;
+        clear: both;
+        padding: 5px 0px;
+        display: flex;
+    }
+    
+    
+    #first, #second, #third {
+        float: left;
+        margin: 0px;
+        width: 33%;
+    }
+    </style>
+    </head>
+<body>   
+<div style="background-color:lightsteelblue;">
+        PRISM&trade;
+        
+        <a href="loginPrism.html"  style="float: right;justify-content: right;">Sign Out</a>
+     <a href="welcome_Page.html"  style="float: right;justify-content: right;">Home &nbsp;</a>
+        <a href=""  style="float: right;justify-content: right;">Help &nbsp;</a>
+        
+   </div>
+   <div style="background-color:#02669f;">
+    &nbsp; BPA Call: <span id="result-contractNo2"></span> (BASE/Released)
+    <script>
+    document.getElementById("result-contractNo2").innerHTML=localStorage.getItem("contractKey");
+    
+    
+    </script>
+    </div>
+    <div style="height: 50px;">
+        &nbsp; Change Current Buyer
+
+    </div></br>
+    <div style="background-color: lightgrey; height: 20px;"></div>
+    <div>
+        &nbsp; BPA Call Number: <span id="result-contractNo3"></span> 
+        <script>
+        document.getElementById("result-contractNo3").innerHTML=localStorage.getItem("contractKey");
+        </script>
+    </div></br>
+    <div>
+        &nbsp; Current Buyer: NEWMANT_NIH
+    </div></br>
+    <form action="modifyEnabled.html">
+        <label for="search">&nbsp; New Buyer:</label>
+        <input type="search" id="search" name="search">
+    </form>
+    <br><br>
+    <a style="text-decoration: none;
+    background-color: lightsteelblue;
+    color:black;
+    display: inline-block;
+    padding: 8px 16px;" href="modifyOptions.html">Continue &raquo;</a>
+    <a style="text-decoration: none;
+    background-color: lightsteelblue;
+    color: black;
+    display: inline-block;
+    padding: 8px 16px;" href="#">Cancel</a>
+    <br><br>
+    <footer style="background-color:lavender;font-size: 10px;">
+  <div class="footerMain">
+   <div style="text-align:left" id="first">&copy;2018 Compusearch Software Systems, Inc. All rights reserved prod1.</div>
+   <div style="text-align:center" id="second">Accessibility and Helpful Tools</div>
+   <div style="text-align:right" id="third">PRISM v. 72.60.07.09.COTS</div>
+  </div>
+  </footer>
+</body>
+       </html>

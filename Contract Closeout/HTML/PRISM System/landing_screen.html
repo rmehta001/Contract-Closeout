@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="login2.css" media="screen"/>
+<script>
+    document.getElementById("result-contractNo5").innerHTML=localStorage.getItem("contractKey");
+</script>
+</head>
+<Body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+      <p>PRISM&trade;</p>
+    </div>
+  <form>
+     Close out Process Complete for <span id="result-contractNo5"></span></br>
+     Thank You! </Br>
+    </Br>
+     <input type="button" value="Process Another Contract" onclick="javascript:load()">
+  </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="loginPrism.html">Log Out</a>
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+function load()
+{
+	location.replace("welcome_Page.html");
+}
+</script>
+</Body>
+</html>

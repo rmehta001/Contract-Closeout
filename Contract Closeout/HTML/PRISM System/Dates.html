@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script src="https://kit.fontawesome.com/feffb1c48c.js" crossorigin="anonymous"></script>
+  <style>
+
+    .btn {
+  width: 180px;
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.separator {
+      content: '';
+      display: inline-block;
+      background: #888;
+      margin: 0px 4px;
+      height: 18px;
+      width: 1px;
+      vertical-align: top;
+    }
+
+    .footerMain {
+        width: 100%;
+        clear: both;
+        padding: 5px 0px;
+        display: flex;
+    }
+    
+    
+    #first, #second, #third {
+        float: left;
+        margin: 0px;
+        width: 33%;
+    }
+    </style>
+</head>
+<body style="border: 3px solid #02669f;">
+​
+<div style="background-color:lightsteelblue;">
+     PRISM&trade;
+     
+     <a href="loginPrism.html"  style="float: right;justify-content: right;">Sign Out</a>
+     <a href="welcome_Page.html"  style="float: right;justify-content: right;">Home &nbsp;</a>
+     <a href=""  style="float: right;justify-content: right;">Help &nbsp;</a>
+     
+</div>
+<div style="background-color:#02669f;">
+&nbsp BPA Call:<span id="result-contractNo5"></span> (0001/In Progress)
+<script>
+document.getElementById("result-contractNo5").innerHTML=localStorage.getItem("contractKey");
+
+
+</script> 
+<div style="float: right;">
+ 
+  <a href="">
+    <img src="nav_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+      <img src="details_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+        <img src="messages_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+          <img src="access_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+    <img src="history_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+      <img src="postaward_button.png" width="48px" height="48px"  alt="nav">
+    </a>
+ </div>
+ </div>           
+ <br><br><br>
+
+ <div style="float:right;">
+ <div style="border:1px solid black;border-radius:20px;">
+ <form style="padding: 8px;" action="">
+
+  <label>
+    <img src="printer.png" width="30px" height="30px">
+  </label>
+  <select id="selectBox" name="" onchange="javascript:location.href = this.value;">
+        <option value="" selected>Other Actions</option>
+        <option value="changeBuyers.html">Change Buyer</option>
+      </select>
+ 
+</form>
+
+</div>
+
+
+</div>
+<div style=" height:20px; background-color: grey;margin-top: 30px;"></div>
+<div style="display: flex;">
+<div>
+&nbsp;Summary
+<br>
+<img src="summary.png">
+</div>
+<div>
+  <button type="menu" style="transform:rotate(90deg);">Summary</button>
+  <!-- <button type="menu" style="transform:rotate(90deg);">e-Folder</button> -->
+  </div>
+
+
+<div>
+<h3>Use this section to capture the significant dates for the contract</h3>
+</br>
+<form>
+  <label for="Perf">Period of performance:&nbsp;</label>
+  <input type="date" id="performance" name="periodOfPerf">
+  <i class="far fa-calendar-alt"></i>
+  <label for="range">to:</label>
+  <input type="date" id="range" name="DTrange">
+  <i class="far fa-calendar-alt"></i></br>
+  <label for="awardDT">Award Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="date" id="award" name="DTaward">
+  <i class="far fa-calendar-alt"></i></br>
+  <label for="EffectiveDT">Effective Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="date" id="effe" name="DTEffec">
+  <i class="far fa-calendar-alt"></i></br>
+  <label for="vendor">Vendor Signed On Date:</label>
+  <input type="date" id="ven" name="DTVendor">
+  <i class="far fa-calendar-alt"></i></br>
+  <label for="noticeDT">Notice to Proceed Date:</label>
+  <input type="date" id="notice" name="DTnotice">
+  <i class="far fa-calendar-alt"></i></br>
+  <label for="CompletionDT">Current Completion Date: 12/31/2017</label></br>
+  <label for="FinalDT">Ultimate Completion Date: 12/31/2017</label></br>
+  <label for="expDT">BPA Expiration Date: 12/31/2019</label></br></br></br>
+
+</form>
+
+<a href="Requirements.html" ><button class="btn"><i class="fas fa-arrow-left"></i> <span class="separator"></span> Previous</button></a>
+<a href="landing_screen.html" ><button class="btn"> Next <span class="separator"></span> <i class="fas fa-arrow-right"></i></button>
+<a href="Requirements.html" ><button class="btn"><i class="fas fa-home"></i> Return to Home</button></a>
+</div>
+
+</div>
+
+<footer style="background-color:lavender;font-size: 10px;">
+  <div class="footerMain">
+   <div style="text-align:left" id="first">&copy;2018 Compusearch Software Systems, Inc. All rights reserved prod1.</div>
+   <div style="text-align:center" id="second">Accessibility and Helpful Tools</div>
+   <div style="text-align:right" id="third">PRISM v. 72.60.07.09.COTS</div>
+  </div>
+  </footer>
+  </body>
+  </html>
+  

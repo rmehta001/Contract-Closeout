@@ -1,0 +1,161 @@
+<html>
+<head>
+
+    <script>
+     function passvalues()
+     {
+         var contractNumber=document.getElementById("contractNo").value;
+         localStorage.setItem("contractKey",contractNumber);
+         return false;
+     }   
+    </script>
+
+</head>
+<body>
+<div style="background-color:lightsteelblue;">
+     PRISM&trade;
+     
+     <a href="loginPrism.html"  style="float: right;justify-content: right;">Sign Out</a>
+     <a href=""  style="float: right;justify-content: right;">Home &nbsp;</a>
+     <a href=""  style="float: right;justify-content: right;">Help &nbsp;</a>
+     
+</div>
+  <div style="background-color: #02669f;color: azure;">
+   <h1>Welcome CANDICE D. HARDING</h1>
+  </div>
+  <br>
+<form action="closeout_page2.html">
+        <label>Quick Open:</label>
+        <input type="text" id="contractNo">
+        <input type="submit" value="open" onclick="passvalues();"> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="fname">Create Document:</label>
+        <select name="createDocument" id="createDocument">
+            <option value="" selected></option>
+            </select>
+            <input type="submit" value="Create"> 
+            <br>  
+</form>            
+  <div style=" height:20px; background-color: grey;margin-top: 30px;"></div>
+
+<div style="display: flex;">
+<div style="flex: 0 0 60.7%;border: 1px solid #02669f;">
+<div style="background-color: #02669f;color: white;">
+  <div>
+  <img src="inbox_image.png"><b>Inbox</b></img>
+  </div>
+</div>
+
+<div style="background-color:white;color:#02669f  ">
+  <img src="Approval_image.png"><b>For Approval (/)</b></img>
+  </div>
+  <div style="width: 60%;
+padding-top: 3px;
+border-bottom: 1px solid black;
+position: absolute;">
+
+</div>
+  <div style="background-color:white;color:#02669f  ">
+    <img src="review_image.png"><b>For Review (/)</b></img>
+    </div>
+    <div style="width: 60%;
+padding-top: 3px;
+border-bottom: 1px solid black;
+position: absolute;">
+
+</div>
+    <div>
+    <table>  
+      <tr>
+        <td>
+          <img src="courtesy_copy_image.png">
+        </td>
+        <td>
+          <a href="">Courtesy Copy (/)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="Approved_image.png">
+        </td>
+        <td>
+          <a href="">Approved (/)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="disapproved_image.png">
+        </td>
+        <td>
+          <a href="">Disapproved (/) </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="disapproved_image.png">
+        </td>
+        <td>
+          <a href="">Reviewed  (/)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="disapproved_image.png">
+        </td>
+        <td>
+          <a href="">Completed (/)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="disapproved_image.png">
+        </td>
+        <td>
+          <a href="">Bypassed (/)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="disapproved_image.png">
+        </td>
+        <td>
+          <a href="">Proxied (/)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="notifications_image.png">
+        </td>
+        <td>
+          <a href="">Notifications (/)</a>
+        </td>
+      </tr>
+    </table>
+    </div>
+      <div style="background-color: #02669f;color: white;">
+      <img src="workload_image.png"><b>Workload</b></img>
+      </div>
+      <div style="background-color:white; ">
+        <h4>You have no requisitions assigned to you</h4>
+      </div>
+      <div style="background-color: #02669f;color: white;">
+        <img src="workload_image.png"><b>Tasks</b></img>
+        </div>
+        <div style="background-color:white; ">
+          <h4>You have no tasks due in the next 7 days.</h4>
+        </div>
+     </div>
+     <div style="border: 1px solid #02669f;">
+      <div style="background-color: #02669f;color: white; height: 48px;">
+        <div>
+        <b>Recent Documents</b></img>
+        </div>
+      </div>
+      
+<img src="recent_image.png">
+
+
+
+     </div>   
+</div>           
+</body>
+</html>

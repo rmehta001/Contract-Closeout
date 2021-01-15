@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+    .footerMain {
+        width: 100%;
+        clear: both;
+        padding: 5px 0px;
+        display: flex;
+    }
+    
+    
+    #first, #second, #third {
+        float: left;
+        margin: 0px;
+        width: 33%;
+    }
+    </style>
+  <!-- <script>
+
+function changeAction(val){
+    document.getElementById('storeID').setAttribute('action', val);
+}
+  </script> -->
+</head>
+<body style="border: 3px solid #02669f;">
+​
+<div style="background-color:lightsteelblue;">
+     PRISM&trade;
+     
+     <a href="loginPrism.html"  style="float: right;justify-content: right;">Sign Out</a>
+     <a href="welcome_Page.html"  style="float: right;justify-content: right;">Home &nbsp;</a>
+     <a href=""  style="float: right;justify-content: right;">Help &nbsp;</a>
+     
+</div>
+<div style="background-color:#02669f;">
+&nbsp BPA Call:<span id="result-contractNo5"></span> (0001/In Progress)
+<script>
+document.getElementById("result-contractNo5").innerHTML=localStorage.getItem("contractKey");
+
+
+</script> 
+<div style="float: right;">
+ 
+  <a href="">
+    <img src="nav_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+      <img src="details_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+        <img src="messages_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+          <img src="access_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+    <img src="history_button.png" width="48px" height="48px" alt="nav">
+    </a>
+  <a href="">
+      <img src="postaward_button.png" width="48px" height="48px"  alt="nav">
+    </a>
+ </div>
+ </div>           
+ <br><br><br>
+
+ <div style="float:right;">
+ <div style="border:1px solid black;border-radius:20px;">
+ <form style="padding: 8px;" action="">
+
+  <label>
+    <img src="printer.png" width="30px" height="30px">
+  </label>
+  <select id="selectBox" name="" onchange="javascript:location.href = this.value;">
+        <option value="" selected>Other Actions</option>
+        <option value="changeBuyers.html">Change Buyer</option>
+      </select>
+ 
+</form>
+
+</div>
+
+
+</div>
+<div style=" height:20px; background-color: grey;margin-top: 30px;"></div>
+<div style="display: flex;">
+<div>
+&nbsp;Summary
+<br>
+<img src="summary.png">
+</div>
+<div>
+  <button type="menu" style="transform:rotate(90deg);">Summary</button>
+  <!-- <button type="menu" style="transform:rotate(90deg);">e-Folder</button> -->
+  </div>
+
+
+<div>
+
+    <h3>Modification 0001 has been successfully created</h3>
+    <h4>You may use the options below to update details, modify line items and/or clauses that were changed on this modification. Or, you may begin
+        with the modification template.
+    </h4>
+    <h5 style="font-family: cursive;">What would you like to do?</h5>
+    <ul>
+    
+    <li style="list-style-image: url(update_modification.png);"><a href="Requirements.html">Update modification details</a></li>
+    <li style="list-style-image: url(add_modify_items.png);"><a href="">Add/modify line items (0 line items on this mod)</a></li>
+    <li style="list-style-image: url(add_modify_clauses.png);"><a href="">Add/modify clauses (0 clauses on this mod)</a></li>
+    <li style="list-style-image: url(validate_modification.png);"><a href="">Validate modification data</a></li>
+    <li style="list-style-image: url(edit_modification.png);"><a href="">Edit modification template</a></li>
+    <li style="list-style-image: url(manage_release.png);"><a href="">Manage release distribution</a></li>
+    <li style="list-style-image: url(add_revise_attachments.png);"><a href="">Add revise attachments (0 attachments on this modificaton)</a></li>
+    <li style="list-style-image: url(manage_supp_docs.png);"><a href="">Manage supporting docs (0 files)</a></li>
+    <li style="list-style-image: url(view_confirmed.png);"><a href="">View confirmed modification </a></li>
+</ul>
+<label for="switchBPAVersion">Switch to a different version of this BPA call</label><br> 
+          <select name="switchBPAVersion" id="switchBPAVersion">
+             <option value="" selected>0001 Close Out In Progress</option>
+          </select><br><br>
+          <label>Create a new document from this BPA call</label><br> 
+          <select>
+             <option value="" selected>Select</option>
+          </select><br><br>
+<button href="welcome_Page.html" type="button">Return to Home</button><br><br>    
+</div>
+
+</div>
+
+<footer style="background-color:lavender;font-size: 10px;">
+  <div class="footerMain">
+   <div style="text-align:left" id="first">&copy;2018 Compusearch Software Systems, Inc. All rights reserved prod1.</div>
+   <div style="text-align:center" id="second">Accessibility and Helpful Tools</div>
+   <div style="text-align:right" id="third">PRISM v. 72.60.07.09.COTS</div>
+  </div>
+  </footer>
+  </body>
+  </html>
+  
